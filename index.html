@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    
+  
+    function myFunction() {
+  var x = document.getElementById("VCnav");
+  if (x.className === "VCright") {
+    x.className += " responsive";
+  } else {
+    x.className = "VCright";
+  }
+}
+
+</script>
+</head>
+<body>
+    <header class="VChead">
+        <div>
+        <nav class="VCn">
+            
+            <img class="VClogo" src="logo.png" alt="logo" width="5%" height="5%">
+            <div class="VCright" id="VCnav">
+                <a class="VCbbutton" href="#home">HOME</a>
+                <a class="VCbutton" href="#news">ABOUT US</a>
+                <a class="VCbutton" href="#news">EVENTS</a>
+                <a class="VCbutton" href="#news">VIEWS</a>
+                <a class="VCbutton" href="#news">TEAM</a>
+            <a class="VCbutton" href="#home">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+                </div>
+        </nav>
+        <div class="VCvideo">
+            <video autoplay loop muted id="VCvideo-bg" width=100% height=100%>
+
+                <source src="Final Comp_2.mp4" type="video/mp4">
+        
+              </video>
+        
+        </div>
+    </div>
+   </header>
+</body>
+</html>
