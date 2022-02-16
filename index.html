@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script>
-    
-  
-    function myFunction() {
-  var x = document.getElementById("VCnav");
-  if (x.className === "VCright") {
-    x.className += " responsive";
-  } else {
-    x.className = "VCright";
-  }
-}
-
-</script>
-</head>
-<body>
-    <header class="VChead">
-        <div>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("VCnav");
+        if (x.className === "VCright") {
+          x.className += " responsive";
+        } else {
+          x.className = "VCright";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="VChead">
+      <div>
         <nav class="VCn">
-            
-            <img class="VClogo" src="logo.png" alt="logo" width="5%" height="5%">
-            <div class="VCright" id="VCnav">
-                <a class="VCbbutton" href="#home">HOME</a>
-                <a class="VCbutton" href="#news">ABOUT US</a>
-                <a class="VCbutton" href="#news">EVENTS</a>
-                <a class="VCbutton" href="#news">VIEWS</a>
-                <a class="VCbutton" href="#news">TEAM</a>
+          <img
+            class="VClogo"
+            src="logo.png"
+            alt="logo"
+            width="5%"
+            height="5%"
+          />
+          <div class="VCright" id="VCnav">
+            <a class="VCbbutton" href="#home">HOME</a>
+            <a class="VCbutton" href="#news">ABOUT US</a>
+            <a class="VCbutton" href="#news">EVENTS</a>
+            <a class="VCbutton" href="#news">VIEWS</a>
+            <a class="VCbutton" href="#news">TEAM</a>
             <a class="VCbutton" href="#home">CONTACT</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-                </div>
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </nav>
         <div class="VCvideo">
-            <video autoplay loop muted id="VCvideo-bg" width=100% height=100%>
-
-                <source src="Final Comp_2.mp4" type="video/mp4">
-        
-              </video>
-        
+          <video autoplay loop muted id="VCvideo-bg" width="100%" height="100%" style="display: block;">
+            <source src="Final Comp_2.mp4" type="video/mp4" />
+          </video>
         </div>
+      </div>
+
     </div>
-   </header>
-</body>
+    <!-- footer -->
+    <div class="row footer" >
+      <div class ="col-lg-4 first">
+          <img class ="logo" src="EmbeddedImage.png" alt="" width="25%" >
+          <br>
+          <h3>Pratigya Abhiyan</h3>
+          <img class="sm" src="instagram.png" alt="" width="5%">
+          <img class ="sm" src="youtube.png" alt="" width="5%">
+          <img class="sm" src="linkedin.png" alt="" width="5%">
+          <img class="sm" src="facebook.png" alt="" width="5%">
+
+      </div>
+      <div class="col-lg-4">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          
+      </div>
+      <div class="col-lg-4 third">
+          <iframe
+          width="300"
+          height="150"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=thapar%20universi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          ></iframe
+      </div>
+    </div>
+  </body>
 </html>
