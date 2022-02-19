@@ -81,6 +81,112 @@ body{
     display: none;
   }
 
+
+  .VCright.responsive a {
+    float:none;
+    display: block;
+    text-align: center;
+    
+  }
+  .VCright.responsive{
+   width:100%;
+   background-color: black;
+    text-align:center;
+    font-size:90%;
+    color:blanchedalmond;
+  }
+  .VCright.responsive a:hover{
+    color: blue;
+    }
+
+/* .......................... */
+.gg-con{
+  padding: 5px;
+  background-color: #dcc7aa;
+  border: #f2c331 solid 27px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.con-1{
+  font-size: 12px;
+  color: #6b7a8f;
+  display: flex;
+  width: 33%;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.con-1 img{
+  
+  height: 48%;
+  width: 26%;
+}
+.count , .gg-h{
+  display: inline;
+  font-size: 30px;
+  margin-left: 41px;
+
+
+}
+
+@media (max-width:1273px) {
+   .con-1{
+       flex-direction: column;
+      }
+      .count{
+  display: inline;
+  font-size: 20px;
+  margin-left: 0px;
+
+
+}
+.gg-h{
+  display: inline;
+text-transform: capitalize;
+  font-size: 20px;
+  margin: 10px;
+}
+}
+@media (max-width:699px) {
+   .gg-con{
+       flex-direction: column;
+      
+   }
+   .con-1{
+       flex-direction: row;
+       width: 100%;
+
+   }
+   .count{
+  display: inline;
+  font-size: 20px;
+  margin-left: 20px;
+
+
+}
+.gg-h{
+  display: inline;
+text-transform: capitalize;
+  font-size: 20px;
+  margin: 10px;
+}
+}
+/* ................... */
+@media screen and (max-width: 600px) {
+  .VCright.responsive {position: relative;}
+  .VCright.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+/* ,,,,,,,,,,, */
+
 @media screen and (max-width:768px)
 {
  .VCright a{
@@ -107,29 +213,4 @@ body{
     width:15%;
     height:15%;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .VCright.responsive {position: relative;}
-  .VCright.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .VCright.responsive a {
-    float:none;
-    display: block;
-    text-align: center;
-    
-  }
-  .VCright.responsive{
-   width:100%;
-   background-color: black;
-    text-align:center;
-    font-size:90%;
-    color:blanchedalmond;
-  }
-  .VCright.responsive a:hover{
-    color: blue;
-    }
 }
