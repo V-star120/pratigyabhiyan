@@ -1,53 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script>
-    
-  
-    function myFunction() {
-  var x = document.getElementById("VCnav");
-  if (x.className === "VCright") {
-    x.className += " responsive";
-  } else {
-    x.className = "VCright";
-  }
-}
-
-</script>
-</head>
-<body>
-    <header class="VChead">
-        <div>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("VCnav");
+        if (x.className === "VCright") {
+          x.className += " responsive";
+        } else {
+          x.className = "VCright";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="VChead">
+      <div>
         <nav class="VCn">
-            
-            <img class="VClogo" src="logo.png" alt="logo" width="5%" height="5%">
-            <div class="VCright" id="VCnav">
-                <a class="VCbbutton" href="#home">HOME</a>
-                <a class="VCbutton" href="#news">ABOUT US</a>
-                <a class="VCbutton" href="#news">EVENTS</a>
-                <a class="VCbutton" href="#news">VIEWS</a>
-                <a class="VCbutton" href="#news">TEAM</a>
+          <img
+            class="VClogo"
+            src="logo.png"
+            alt="logo"
+            width="5%"
+            height="5%"
+          />
+          <div class="VCright" id="VCnav">
+            <a class="VCbbutton" href="#home">HOME</a>
+            <a class="VCbutton" href="#news">ABOUT US</a>
+            <a class="VCbutton" href="#news">EVENTS</a>
+            <a class="VCbutton" href="#news">VIEWS</a>
+            <a class="VCbutton" href="#news">TEAM</a>
             <a class="VCbutton" href="#home">CONTACT</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-                </div>
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </nav>
         <div class="VCvideo">
-            <video autoplay loop muted id="VCvideo-bg" width=100% height=100%>
-
-                <source src="Final Comp_2.mp4" type="video/mp4">
-        
-              </video>
-        
+          <video autoplay loop muted id="VCvideo-bg" width="100%" height="100%" style="display: block;">
+            <source src="Final Comp_2.mp4" type="video/mp4" />
+          </video>
         </div>
+      </div>
+
     </div>
-   </header>
-</body>
+    <!--messages-->
+    <div class="testimonial_m">
+      <div class="container">
+          <div class="box">
+              <div class="imgBox">
+                  <img src="anoop sirr.png" width="100%" height="100%">
+              </div>
+              <p><b>“Today a reader, tomorrow a leader.”</b></p><p>The Pratigya Abhiyan believes in student-empowerment through education. The strength of the nation lies in the strength of the student community. The Society lays its focus on achieving unparalleled excellence by optimizing the potential of students, and working towards their holistic growth, for the welfare of the society, and humanity at large.
+              </p>
+              <h4>Dr. Anoop Verma<br><span>President</span></h4>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="Sudhanshu sir.jpeg" width="100%" height="100%">
+              </div>
+              <p><b>“The objective of education is to prepare the young how to educate themselves, exploring all round goals, enhancing creativity and their talent and achieving the heights throughout their lives.”</b></p><p>I am humbled by the opportunity to serve as General Secretary of the Pratigya Abhiyan Society; one of the largest, also oldest Society in TIET.We want all our students to achieve their full potential. Our task is to make it possible and our mission is to provide a platform for the same.
+              </p>
+              <h4>Mr. Sudhanshu Sharma<br><span>Gen Sec</span></h4>
+          </div>
+      </div>
+  </div>
+    <!-- ,.............achivement bar................................................... -->
+
+    
+    <div class="gg-con">
+      <div class="con-1">
+          <img src="graduation-cap.png" alt="">
+          <h2 class="count">150</h2>
+          <h2 class="gg-h">+ MEMBERS</h2>
+      </div>
+      <div class="con-1">
+          <img src="open-book.png" alt="">
+          <h2 class="count">200</h2>
+          <h2 class="gg-h">  + STUDENTS</h2>
+      </div>
+      <div class="con-1">
+          <img src="school.png" alt="">
+          <h2 class="count">&nbsp 50</h2>
+          <h2 class="gg-h">  + SCHOOLS</h2>
+      </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $(".count").counterUp({
+            delay:10,
+            time:1200
+        });
+    });
+</script>
+    <!-- footer.................................. -->
+    <div class="row footer" >
+      <div class ="col-lg-4 first">
+          <img class ="logo" src="logo.png" alt="" width="25%" >
+          <br>
+          <h3>Pratigya Abhiyan</h3>
+          <img class="sm" src="instagram.png" alt="" width="5%">
+          <img class ="sm" src="youtube.png" alt="" width="5%">
+          <img class="sm" src="linkedin.png" alt="" width="5%">
+          <img class="sm" src="facebook.png" alt="" width="5%">
+
+      </div>
+      <div class="col-lg-4">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          
+      </div>
+      <div class="col-lg-4 third">
+          <iframe
+          width="300"
+          height="150"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=thapar%20universi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          ></iframe>
+          <!-- ............................... -->
+
+      </div>
+    </div>
+  </body>
 </html>
