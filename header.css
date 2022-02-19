@@ -129,7 +129,7 @@ body{
 .count , .gg-h{
   display: inline;
   font-size: 30px;
-  margin-left: 41px;
+  margin-left: 10px;
 
 
 }
@@ -165,7 +165,7 @@ text-transform: capitalize;
    .count{
   display: inline;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
 
 
 }
